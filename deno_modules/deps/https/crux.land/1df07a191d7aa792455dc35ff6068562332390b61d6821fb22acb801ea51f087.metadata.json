@@ -1,0 +1,13 @@
+{
+  "headers": {
+    "server": "deno/asia-east2-b",
+    "location": "/api/get/uYQG",
+    "vary": "Accept-Encoding",
+    "date": "Thu, 07 Jul 2022 07:46:54 GMT"
+  },
+  "url": "https://crux.land/api/get/router@0.0.11",
+  "now": {
+    "secs_since_epoch": 1657180014,
+    "nanos_since_epoch": 810619034
+  }
+}

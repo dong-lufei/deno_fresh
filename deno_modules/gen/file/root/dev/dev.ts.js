@@ -1,0 +1,4 @@
+#!/usr/bin/env -S deno run -A --watch=static/,routes/
+import dev from "$fresh/dev.ts";
+await dev(import.meta.url, "./main.ts");
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGV2LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiZGV2LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFFQSxPQUFPLEdBQUcsTUFBTSxlQUFlLENBQUM7QUFFaEMsTUFBTSxHQUFHLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxHQUFHLEVBQUUsV0FBVyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIjIS91c3IvYmluL2VudiAtUyBkZW5vIHJ1biAtQSAtLXdhdGNoPXN0YXRpYy8scm91dGVzL1xuXG5pbXBvcnQgZGV2IGZyb20gXCIkZnJlc2gvZGV2LnRzXCI7XG5cbmF3YWl0IGRldihpbXBvcnQubWV0YS51cmwsIFwiLi9tYWluLnRzXCIpO1xuIl19

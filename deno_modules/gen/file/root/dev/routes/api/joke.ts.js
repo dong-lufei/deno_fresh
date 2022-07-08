@@ -1,0 +1,18 @@
+const JOKES = [
+    "Why do Java developers often wear glasses? They can't C#.",
+    "A SQL query walks into a bar, goes up to two tables and says “can I join you?”",
+    "Wasn't hard to crack Forrest Gump's password. 1forrest1.",
+    "I love pressing the F5 key. It's refreshing.",
+    "Called IT support and a chap from Australia came to fix my network connection.  I asked “Do you come from a LAN down under?”",
+    "There are 10 types of people in the world. Those who understand binary and those who don't.",
+    "Why are assembly programmers often wet? They work below C level.",
+    "My favourite computer based band is the Black IPs.",
+    "What programme do you use to predict the music tastes of former US presidential candidates? An Al Gore Rhythm.",
+    "An SEO expert walked into a bar, pub, inn, tavern, hostelry, public house.",
+];
+export const handler = (_req, _ctx) => {
+    const randomIndex = Math.floor(Math.random() * JOKES.length);
+    const body = JOKES[randomIndex];
+    return new Response(body);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiam9rZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImpva2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0EsTUFBTSxLQUFLLEdBQUc7SUFDWiwyREFBMkQ7SUFDM0QsZ0ZBQWdGO0lBQ2hGLDBEQUEwRDtJQUMxRCw4Q0FBOEM7SUFDOUMsOEhBQThIO0lBQzlILDZGQUE2RjtJQUM3RixrRUFBa0U7SUFDbEUsb0RBQW9EO0lBQ3BELGdIQUFnSDtJQUNoSCw0RUFBNEU7Q0FDN0UsQ0FBQztBQUVGLE1BQU0sQ0FBQyxNQUFNLE9BQU8sR0FBRyxDQUFDLElBQWEsRUFBRSxJQUFvQixFQUFZLEVBQUU7SUFDdkUsTUFBTSxXQUFXLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsS0FBSyxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQzdELE1BQU0sSUFBSSxHQUFHLEtBQUssQ0FBQyxXQUFXLENBQUMsQ0FBQztJQUNoQyxPQUFPLElBQUksUUFBUSxDQUFDLElBQUksQ0FBQyxDQUFDO0FBQzVCLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEhhbmRsZXJDb250ZXh0IH0gZnJvbSBcIiRmcmVzaC9zZXJ2ZXIudHNcIjtcblxuLy8gSm9rZXMgY291cnRlc3kgb2YgaHR0cHM6Ly9wdW5zYW5kb25lbGluZXJzLmNvbS9yYW5kb21uZXNzL3Byb2dyYW1tZXItam9rZXMvXG5jb25zdCBKT0tFUyA9IFtcbiAgXCJXaHkgZG8gSmF2YSBkZXZlbG9wZXJzIG9mdGVuIHdlYXIgZ2xhc3Nlcz8gVGhleSBjYW4ndCBDIy5cIixcbiAgXCJBIFNRTCBxdWVyeSB3YWxrcyBpbnRvIGEgYmFyLCBnb2VzIHVwIHRvIHR3byB0YWJsZXMgYW5kIHNheXMg4oCcY2FuIEkgam9pbiB5b3U/4oCdXCIsXG4gIFwiV2Fzbid0IGhhcmQgdG8gY3JhY2sgRm9ycmVzdCBHdW1wJ3MgcGFzc3dvcmQuIDFmb3JyZXN0MS5cIixcbiAgXCJJIGxvdmUgcHJlc3NpbmcgdGhlIEY1IGtleS4gSXQncyByZWZyZXNoaW5nLlwiLFxuICBcIkNhbGxlZCBJVCBzdXBwb3J0IGFuZCBhIGNoYXAgZnJvbSBBdXN0cmFsaWEgY2FtZSB0byBmaXggbXkgbmV0d29yayBjb25uZWN0aW9uLiAgSSBhc2tlZCDigJxEbyB5b3UgY29tZSBmcm9tIGEgTEFOIGRvd24gdW5kZXI/4oCdXCIsXG4gIFwiVGhlcmUgYXJlIDEwIHR5cGVzIG9mIHBlb3BsZSBpbiB0aGUgd29ybGQuIFRob3NlIHdobyB1bmRlcnN0YW5kIGJpbmFyeSBhbmQgdGhvc2Ugd2hvIGRvbid0LlwiLFxuICBcIldoeSBhcmUgYXNzZW1ibHkgcHJvZ3JhbW1lcnMgb2Z0ZW4gd2V0PyBUaGV5IHdvcmsgYmVsb3cgQyBsZXZlbC5cIixcbiAgXCJNeSBmYXZvdXJpdGUgY29tcHV0ZXIgYmFzZWQgYmFuZCBpcyB0aGUgQmxhY2sgSVBzLlwiLFxuICBcIldoYXQgcHJvZ3JhbW1lIGRvIHlvdSB1c2UgdG8gcHJlZGljdCB0aGUgbXVzaWMgdGFzdGVzIG9mIGZvcm1lciBVUyBwcmVzaWRlbnRpYWwgY2FuZGlkYXRlcz8gQW4gQWwgR29yZSBSaHl0aG0uXCIsXG4gIFwiQW4gU0VPIGV4cGVydCB3YWxrZWQgaW50byBhIGJhciwgcHViLCBpbm4sIHRhdmVybiwgaG9zdGVscnksIHB1YmxpYyBob3VzZS5cIixcbl07XG5cbmV4cG9ydCBjb25zdCBoYW5kbGVyID0gKF9yZXE6IFJlcXVlc3QsIF9jdHg6IEhhbmRsZXJDb250ZXh0KTogUmVzcG9uc2UgPT4ge1xuICBjb25zdCByYW5kb21JbmRleCA9IE1hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIEpPS0VTLmxlbmd0aCk7XG4gIGNvbnN0IGJvZHkgPSBKT0tFU1tyYW5kb21JbmRleF07XG4gIHJldHVybiBuZXcgUmVzcG9uc2UoYm9keSk7XG59O1xuIl19

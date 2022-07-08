@@ -1,0 +1,7 @@
+import { h } from "preact";
+export default function Greet(props) {
+    return h("div", null,
+        "Hello home/",
+        props.params.name);
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiW25hbWVdLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiW25hbWVdLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxPQUFPLEVBQUUsQ0FBQyxFQUFFLE1BQU0sUUFBUSxDQUFBO0FBRzFCLE1BQU0sQ0FBQyxPQUFPLFVBQVUsS0FBSyxDQUFDLEtBQWdCO0lBQzVDLE9BQU87O1FBQWlCLEtBQUssQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFPLENBQUE7QUFDbEQsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKiBAanN4IGggKi9cbmltcG9ydCB7IGggfSBmcm9tIFwicHJlYWN0XCJcbmltcG9ydCB7IFBhZ2VQcm9wcyB9IGZyb20gXCIkZnJlc2gvc2VydmVyLnRzXCJcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gR3JlZXQocHJvcHM6IFBhZ2VQcm9wcykge1xuICByZXR1cm4gPGRpdj5IZWxsbyBob21lL3twcm9wcy5wYXJhbXMubmFtZX08L2Rpdj5cbn1cbiJdfQ==
